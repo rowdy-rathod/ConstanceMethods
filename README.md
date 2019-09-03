@@ -1,5 +1,5 @@
 # ConstanceMethods
-We can access all types of Constance methods. 
+We can access all the Constant methods. 
 To get a Git project into your build:
 
 Step 1. Add the JitPack repository to your build file
@@ -25,7 +25,7 @@ Step 2. Add the dependency
 
 
 
-Try this => 
+Examples => 
 
     //Save boolean value in preferences true/false
     ConstanceMethods.saveBooleanPreferences(this, Constance.KEY_IS_LOGGED_IN_USER, true);
