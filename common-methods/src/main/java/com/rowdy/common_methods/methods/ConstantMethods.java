@@ -44,7 +44,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.rowdy.common_methods.R;
-import com.rowdy.common_methods.common.Constance;
+import com.rowdy.common_methods.common.Constant;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -61,7 +61,7 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ConstanceMethods {
+public class ConstantMethods {
 
     public static ProgressDialog progressDialog;
     public static String selectedDate = "";
@@ -245,13 +245,13 @@ public class ConstanceMethods {
             SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
             if (sharedPreferences.contains(key)) {
                 switch (preferenceDataType) {
-                    case Constance.PREF_TYPE_BOOLEAN:
+                    case Constant.PREF_TYPE_BOOLEAN:
                         value = sharedPreferences.getBoolean(key, false);
                         break;
-                    case Constance.PREF_TYPE_INT:
+                    case Constant.PREF_TYPE_INT:
                         value = sharedPreferences.getInt(key, 0);
                         break;
-                    case Constance.PREF_TYPE_STRING:
+                    case Constant.PREF_TYPE_STRING:
                         value = sharedPreferences.getString(key, "");
                         break;
                 }
@@ -830,6 +830,5 @@ public class ConstanceMethods {
         }
         return Base64.encodeToString(imgeByte, Base64.DEFAULT);
     }
-
 
 }

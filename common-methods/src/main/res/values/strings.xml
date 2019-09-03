@@ -1,3 +1,67 @@
 <resources>
     <string name="app_name">common-methods</string>
+
+    <string name="digital_trainee_slogan">India\'s 1st Practical Digital Marketing Training Institute</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">info@digitaltrainee.com</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- Main Drawer title-->
+    <string name="contact_us">Contact US</string>
+    <string name="join_us">Join Us</string>
+    <string name="call">Call Us</string>
+    <string name="whatsapp">WhatsApp Us</string>
+    <string name="mail">Mail Us</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign in</string>
+    <string name="privacy_Policy">Privacy policy</string>
+    <string name="version">Version: %1$s</string>
+    <string name="copy_right">Copyright  2019. All Rights Reserved.\nDigitizeBrand Hub (India) Pvt Ltd.</string>
+
+    <!-- Main Drawer title-->
+    <string name="opens_with">Open With</string>
+
+
+    <!-- Common-->
+    <string name="close">Close</string>
+    <string name="error">Error</string>
+    <string name="wtapp_number">918956145465</string>
+    <string name="download_started">Download Started</string>
+    <string name="syllabus_name">digital_trainee_syllabus</string>
+
+
+    <!-- progress dialiog-->
+    <string name="please_wait">Please Wait.</string>
+
+    <!-- error string-->
+    <string name="error_no_application_found">No application found.</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="error_permission_denied">Must give necessary permission</string>
+    <string name="error_network">No Internet connection detected. Please connect to internet.</string>
+    <string name="error_technical_issues">We are having technical issues at the moment. Please try again later.</string>
+    <string name="error_valid_user_name_and_password">Please enter valid Username and Password.</string>
+    <string name="error_no_host_connection">Cannot connect to remote host. Please try again later.</string>
+
+
+    <!-- alert title-->
+    <string name="permission_denied">Permission Denied.</string>
+    <string name="alert_title_error">Error</string>
+    <string name="alert_title_alert">Alert</string>
+    <string name="alert_title_confirm">Confirm</string>
+    <string name="alert_title_delete">Delete</string>
+    <string name="alert_title_network_error">Network Error</string>
+
+    <!-- alert message string-->
+    <string name="something_went_wrong">Something went wrong.</string>
+
+    <!-- Other -->
+    <string name="whatsapp_primary_text">Hi, I need assistance regarding the course.</string>
+
+    <!-- Login Screen-->
+    <string name="user_name_hint">Enter User Name</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="login">Login</string>
+
+    <!-- Login Screen-->
 </resources>

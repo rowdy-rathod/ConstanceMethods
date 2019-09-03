@@ -1,6 +1,6 @@
 package com.rowdy.common_methods.common;
 
-public class Constance {
+public class Constant {
 
     public final static String KEY_IS_LOGGED_IN_USER = "keyLoggedInUserId";
 

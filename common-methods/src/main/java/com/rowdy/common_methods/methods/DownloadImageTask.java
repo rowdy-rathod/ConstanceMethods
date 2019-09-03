@@ -13,11 +13,13 @@ import com.rowdy.common_methods.R;
 
 import java.io.InputStream;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
     private ImageView bmImage;
     private ProgressBar progressBar;
     private Context context;
-    private int noImageFound = 0;
+    private CircleImageView circleImageView;
 
     public DownloadImageTask(Context context, ImageView bmImage, ProgressBar progressBar) {
         this.context = context;
@@ -25,15 +27,15 @@ public class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         this.progressBar = progressBar;
     }
 
+    public DownloadImageTask(Context context, CircleImageView bmImage, ProgressBar progressBar) {
+        this.context = context;
+        this.circleImageView = bmImage;
+        this.progressBar = progressBar;
+    }
+
     public DownloadImageTask(Context context, ImageView bmImage) {
         this.context = context;
         this.bmImage = bmImage;
-    }
-
-    public DownloadImageTask(Context context, ImageView bmImage, int imageNotFount) {
-        this.context = context;
-        this.bmImage = bmImage;
-        this.noImageFound = imageNotFount;
     }
 
     protected Bitmap doInBackground(String... urls) {
@@ -51,13 +53,19 @@ public class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
 
     protected void onPostExecute(Bitmap result) {
         if (result == null) {
-            if (noImageFound == 0) {
+            if (bmImage != null) {
                 bmImage.setImageDrawable(context.getResources().getDrawable(R.drawable.product_no_image));
-            } else {
-                bmImage.setImageResource(noImageFound);
+            }
+            if (circleImageView != null) {
+                circleImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.product_no_image));
             }
         } else {
-            bmImage.setImageBitmap(result);
+            if (bmImage != null) {
+                bmImage.setImageBitmap(result);
+            }
+            if (circleImageView != null) {
+                circleImageView.setImageBitmap(result);
+            }
         }
         if (progressBar != null) {
             progressBar.setVisibility(View.GONE);
